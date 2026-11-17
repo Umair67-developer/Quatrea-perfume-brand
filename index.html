@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quatréa</title>
+<meta name="description" content="Quatréa: four eaux de parfum, one for each season.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="home">
+<main>
+<section class="h-hero">
+  <canvas class="fx"></canvas>
+  <div class="h-hero__foot label"><span>Four eaux de parfum</span><span>One for each turn of the year</span></div>
+  <div class="h-hero__copy">
+    <h1 class="h-hero__title" data-split>The year,<br><em>distilled.</em></h1>
+    <p class="h-hero__lede" data-reveal>Quatréa composes four fragrances, each opening on an equinox or a solstice. Wear the season you are in, or the one you miss.</p>
+    <div class="h-hero__row" data-reveal><a class="btn btn--solid" href="#wheel">Turn the wheel <svg class="arrow" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h21M16 .5 21 5l-5 4.5"/></svg></a><a class="label" href="finder.html" style="border-bottom:1px solid;padding-bottom:4px">Find your season</a></div>
+  </div>
+  <div class="h-hero__bottles" data-reveal></div>
+</section>
+<section class="wheel" id="wheel" aria-label="The wheel of the year">
+  <div class="wheel__sticky">
+    <div class="wheel__stage">
+      <div class="wheel__ring"></div>
+      <div class="wheel__pointer label"><span>Today</span><i></i></div>
+      <div class="wheel__bottles"></div>
+      <div class="wheel__day"><span class="label">Day of the year</span><b class="num"><span data-day>080</span><span style="opacity:.35"> / 365</span></b><span class="label" data-date style="opacity:.7">21 March</span></div>
+    </div>
+    <div class="wheel__panels"></div>
+    <div class="wheel__progress"><i></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+<section class="collection" id="collection">
+  <div class="sec-head"><span class="label">N°I — N°IV</span><h2 data-split>The <em>collection</em></h2><p data-reveal>Four eaux de parfum, each between 18 and 24 percent concentration, rising with the cold. One refillable bottle, four colours of glass.</p></div>
+  <div class="cards"></div>
+</section>
+<section class="marquee" aria-hidden="true"><div class="marquee__track"></div></section>
+<section class="teasers">
+  <a class="teaser" href="atelier.html" data-cursor="Visit"><div class="teaser__art" data-teaser-atelier></div><span class="label">The house</span><div style="display:grid;gap:18px"><h3>Inside the <em>atelier</em></h3><p>Harvest at dawn, eight weeks of rest in steel, a numbered bottle. How a season becomes a perfume.</p></div></a>
+  <a class="teaser" href="finder.html" data-cursor="Begin" style="background:#E9ECDF;color:#1E2B23"><div class="teaser__art" data-teaser-finder></div><span class="label">Four questions</span><div style="display:grid;gap:18px"><h3>Which season <em>are you?</em></h3><p>An hour, a texture, a drink, a place. We will match you to one of the four.</p></div></a>
+</section>
+</main>
+<footer data-footer></footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
